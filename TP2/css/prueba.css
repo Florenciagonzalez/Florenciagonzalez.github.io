@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #F5F5F5;
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: #0C0D14;
+}
+
+
+/*Header*/
+
+header{
+    display: flex;
+    background-color: #5b14b5;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo{
+   margin: 10px;
+}
+.container-buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .buscador{
+     display: flex;
+     align-items: center;
+     border-radius: 30px;
+     padding: 5px;
+     background-color: #7425D8;
+ }
+ 
+ .buscador input{
+     background: transparent;
+     flex: 1;
+     border: 0;
+     outline: none;
+     width: 450px;
+     height: 30px;
+ 
+ }
+ 
+ .buscador button {
+     border: 0;
+     width: 18px;
+     height: 18px;
+     background: transparent;
+     margin: 5px;
+ }
+ 
+ .buscador button img{
+     width: 20px;
+     height: 20px;
+ }
+ 
+ ::placeholder {
+     color: #F5F5F5B2;
+     padding: 5px;
+     font-size: 13px;
+ }
+
+ .icono-carrito{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.icono-carrito img {
+    width: 30px;
+    height:30px;
+ }
+
+ .menu {
+    float: right;
+    width: 300px;
+    background-color: #1E0045;
+    display: none;
+
+ }
+
+ .menu.show{
+    display: flex;
+ }
+
+
+
+ /*Juego en ejecucion*/
+
+ .container{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .breadcrumbs{
+    width: 285px;
+    margin-top: 22px;
+    padding: 10px;
+    margin-bottom: 37px;
+    border-radius: 3px;
+    background-color: #9546F7;
+ }
+
+ .juego-ejecucion img{
+    width: 1000px;
+    height: 538px;
+    border-radius: 10px;
+ }
+
+ .compartir{
+    background-color: #37007B;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ .icono-compartir {
+    
+ }
+
+ .icono-compartir img{
+    width: 36px;
+    height: 36px;
+ }
+
+
+
+
+ .publicidad{
+    margin-bottom: 20px;
+ }
+
+ .publicidad img{
+    max-width: 300px;
+ }
+
+ aside {
+    margin-top: 135px;
+ }
+
+
+ /*Footer*/
+
+ footer{
+    height: 414px;
+    background-color: #1E0045;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .footer-info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+ }
+
+ .lista-footer{
+    margin-top: 75px;
+    text-align: center;
+    width: 19%;
+ }
+
+ .lista-footer ul{
+    list-style-type: none;
+
+ }
+
+ .lista-footer li a{
+    text-decoration: none;
+    
+ }
+
+ .lista-footer li {
+    margin-top: 20px;
+
+ }
+
+ .linea-divisoria{
+    align-self: center;
+    margin-top: 60px;
+    border: solid 0.5px;
+    width: 1200px;
+ }
+
+ .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 47px;
+ }
+
+ .redes-footer ul{
+    display: flex;
+    list-style-type: none;
+ }
+
+ .redes-footer li{
+    margin-right: 30px;
+
+ }
+
+ .redes-footer img{
+    width: 29px;
+    height: 29px;
+ }
+
+
+
+
+
+
+
+
+ 
+ 
