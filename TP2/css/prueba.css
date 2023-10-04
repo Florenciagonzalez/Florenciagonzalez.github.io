@@ -108,6 +108,11 @@ header{
     justify-content: space-between;
 }
 
+.contenido-principal {
+   display: flex;
+   flex-direction: column;
+}
+
 
  .breadcrumbs{
     width: 285px;
@@ -118,29 +123,154 @@ header{
     background-color: #9546F7;
  }
 
+
+
  .juego-ejecucion img{
     width: 1000px;
     height: 538px;
     border-radius: 10px;
  }
 
- .compartir{
+
+ /*mg y botón compartir*/
+ .calificar-compartir{
     background-color: #37007B;
+    height: 50px;
+    width: 285px;
+    align-self: flex-end;
     border-radius: 5px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
- .icono-compartir {
-    
+ .icono-calif-comp{
+   display: flex;
+   align-items: center;
  }
-
- .icono-compartir img{
+ 
+ .icono-calif-comp img{
     width: 36px;
     height: 36px;
+    margin: 10px;
  }
 
 
+ /*secciones*/
 
+ .info-juego{
+   margin-bottom: 40px;
+ }
+
+ .division-seccion{
+   height: 5px;
+   background-color: #5B14B5;
+   border: #5B14B5;
+   margin-bottom: 10px;
+ }
+
+
+ /*descripcion*/
+
+ .imgs-desc{
+   display: flex;
+   margin-top: 10px;
+ }
+
+ .imgs-desc img {
+   max-height: 150px;
+   margin-right: 20px;
+ }
+
+ 
+ /*instrucciones del juego*/
+ .cont-instrucciones {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .instruccion-juego{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+
+ .instruccion-juego img {
+   margin-right: 10px;
+   width: 70px;
+   height: 65px;
+ }
+
+
+/*comentarios*/
+
+
+
+
+.publicacion, .comentario {
+   background-color: #12131C;
+   width: 800px;
+   height: 120px;
+   margin-bottom: 30px;
+   border-radius: 5px;
+}
+
+.comentario {
+   width: 700px;
+}
+
+.publicacion img, .comentario img {
+   width: 31px;
+   height: 31px;
+   border-radius: 50%;
+   margin-right: 5px;
+}
+
+.comentario-publicar {
+   display: flex;
+   flex-direction: column;
+}
+
+.comentario-publicar p, .comentario-publicar span {
+   padding-left: 5px;
+   padding-top: 5px;
+}
+
+
+
+
+.usuario-comentario {
+   display: flex;
+   padding: 10px;
+   align-items: center;
+}
+
+
+.comentario-publicar textarea, .comentario-publicar button {
+   background-color: transparent;
+   border: 0;
+}
+
+.comentario-publicar button {
+   width: 60px;
+   align-self: flex-end;
+   margin-right: 10px;
+}
+
+.comentario-publicar textarea {
+   margin: 10px;
+}
+
+
+
+
+
+/*aside*/
+
+aside {
+   margin-top: 135px;
+}
 
  .publicidad{
     margin-bottom: 20px;
@@ -150,11 +280,7 @@ header{
     max-width: 300px;
  }
 
- aside {
-    margin-top: 135px;
- }
-
-
+ 
  /*Footer*/
 
  footer{
@@ -221,6 +347,8 @@ header{
  }
 
 
+
+ 
 
 
 

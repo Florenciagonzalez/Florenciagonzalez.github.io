@@ -220,3 +220,29 @@ li  p{
 
 
 /*AGRANDAR EL TAMAÑO DEL CARRITO A 300PX*/
+
+
+/*carrusel mobile*/
+.carrusel {
+    display: flex;
+    overflow: scroll;
+  }
+ 
+.card {
+    /*para que la card mantengan su tamaño con flex 
+    y que no se ajusten a la resoluncion
+    de la pantalla{si no se acomodan 
+    uno al lado de la otra}) (se sale de la pantalla
+    y podemos scrollear con overflow)*/
+    flex:  1 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: #7425D8;
+    margin: 0 10px;
+    transform : rotate3D(-3,-4,0,45deg);
+
+  }
+
+.card:focus{
+    transform: rotate(0);
+  }
