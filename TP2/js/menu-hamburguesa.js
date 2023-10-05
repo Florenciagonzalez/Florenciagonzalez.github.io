@@ -1,20 +1,6 @@
 console.log("comienza");
 
 
-/*document.querySelector(".icono-carrito").addEventListener("click" , menucarrito);
-
-function menucarrito(){
-    document.querySelector(".menu").classList.toggle("mostrar-carrito");
-}
-
-
-document.querySelector(".icono-avatar").addEventListener("click" , menuavatar);
-
-function menuavatar(){
-    document.querySelector(".perfil").classList.toggle("mostrar-perfil");
-}
-*/
-
 //todos los botones
 let botones = document.querySelectorAll(".boton-menu");
 //todos los menus
@@ -40,3 +26,33 @@ botones.forEach((boton, pos) => {
         })
     })
 })
+
+
+//carrucel
+let btnatras= document.querySelector(".atras");
+let btnadelante = document.querySelector(".adelante");
+let img = document.querySelector(".imagenes");
+
+
+btnatras.addEventListener("click" , clickizquierda);
+btnadelante.addEventListener("click" , clickderecha);
+
+
+function  clickizquierda(){
+
+    let contador = Number(img.style.getPropertyValue("--i"));
+    
+        contador = contador + 300;
+        if(contador > 0)return;
+        img.style.setProperty("--i", contador);
+        
+}   
+
+function clickderecha(){
+  
+    let contador = Number(img.style.getPropertyValue("--i"));
+        contador = contador - 300;
+        if(contador < -600)return;
+        img.style.setProperty("--i", contador);
+}
+

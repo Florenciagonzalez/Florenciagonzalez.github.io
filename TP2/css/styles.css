@@ -1,25 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+
+:root {
+    --primario: #5B14B5;
+    --primario-s1: #4C05A4;
+    --primario-s2: #37007B;
+    --primario-s3: #1E0045;
+    --primario-l1: #7425D8;
+    --primario-l2: #9546F7;
+    --primario-l3: #AA67FD;
+    --secundario: #FFA006;
+    --secundario-l1: #FFB53C;
+    --secundario-s1: #DD8900;
+    --blanco: #F5F5F5;
+    --blanco-transparente: rgba(245, 245, 245, 0.70);
+    --negro: #12131C;
+    --negro-background: #0C0D14;
+    --exito: #009321;
+    --acento: #049999;
+    --acento-s1: #007878;
+    --font-inter: 'Inter', sans-serif;
+    --font-chakra: 'Chakra Petch', sans-serif;
+    --font-baloo: 'Baloo Chettan 2', cursive;
+    --elevacion1: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    --elevacion2: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    --elevacion4: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.titulo-h1, .titulo-h2, .titulo-h3, .txtbody, .txtbody-bold, .txtbody2 {
+    font-family: var(--font-inter);
+}
+
+.titulo-h1, .titulo-h2, .titulo-h3, .txtbody-bold {
+    font-weight: 700;
+}
+
+.txtbody, .txtbody2 {
+    font-weight: 400;
+}
+
+.txtbtn, .txtbtn-chico {
+    font-family: var(--font-chakra);
+}
+
+.txtetiqueta, .txtetiqueta-chico {
+    font-family: var(--font-baloo);
+    color: var(--negro);
+}
+
+.titulo-h1{
+    font-size: 36px;   
+}
+
+.titulo-h2 {
+    font-size: 24px;
+}
+
+.titulo-h3 {
+    font-size: 19px;
+}
+
+.-txtbody-bold, .txtbody {
+    font-size: 13px;
+}
+
+.txtbody2 {
+    font-size: 8px;
+}
+
+.txtbtn , .txtetiqueta{
+    font-size: 15px;
+}
+
+.txtbtn-chico , .txtetiqueta-chico{
+    font-size: 11px;
+}
+
 
 *{
     padding: 0;
     margin: 0;
-    color: #F5F5F5;
-    font-family: sans-serif;
-
+    color:var(--blanco);
 }
-header{
+
+body {
+    background-color: var(--negro-background);
+}
+
+/*Header*/
+header {
     display: flex;
-    background-color: #5b14b5;
+    background-color: var(--primario);
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-
-.menu-hamburguesa{
-    background-color: red;
-    width: 100px;
+    box-shadow: var(--elevacion4);
 }
 
 .container-buscador{
@@ -33,7 +110,7 @@ header{
     align-items: center;
     border-radius: 30px;
     padding: 5px;
-    background-color: #7425D8;
+    background-color: var(--primario-l1);
 }
 
 .buscador input{
@@ -56,17 +133,12 @@ header{
 }
 
 ::placeholder {
-    color: #F5F5F5B2;
+    color: var(--blanco-transparente);
     padding: 5px;
     font-size: 13px;
 }
 
-
-
-
-
-/*EMPIEZA CARRITO*/
-
+/*Menú carrito*/
 
 .icono-carrito{
     display: flex;
@@ -78,39 +150,40 @@ header{
     height: 25px;
  }
  
-
  .icono-carrito button{
     background-color: transparent;
     border: 0;
  }
 
-/*oculto carrito*/
 .menu {
     float: right;
     width: 270px;
-    background-color: #1E0045;
+    background-color: var(--primario-s3);
     display: none;
     height: 380px;
     border-radius: 10px;
     margin-right: 2px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
 }
-
 
 .lista .item{
     display: flex;
     margin: 10px;
-    background-color: white;
-    color: black;
+    background-color: var(--blanco);
+    color: var(--negro);
     list-style: none;
     width: 200px;
     height: 56px;
     border-radius: 10px;
 }
+
 .h2-mobile{
     margin:10px;
 }
+
 .carrito-precio{
-    
     display: flex;
     justify-content: space-between;
     margin: 12px;
@@ -123,13 +196,12 @@ header{
     text-transform: uppercase;
 }
 
-
 .btn-primario{
     width: 192px;
     height: 36px;
     border-radius: 50px;
     border: none;
-    background-color: #FFA006;
+    background-color: var(--secundario);
 }
 
 .img-carrito{
@@ -146,26 +218,21 @@ header{
     height: 20px;
    
 }
+
 .item li{
     display: flex;
 }
-li  p{
+
+li p{
     margin: 5px;
     text-align: center;
-    color: black;
+    color: var(--negro);
     width: 90PX;
     padding-left: 20px;    
 }
 
-/*TERMINA CARRITO*/
 
-
-
-
-
-
-
-/*PERFIL*/
+/*Menú perfil*/
 
 .img-avatar{
     width: 50px;
@@ -184,25 +251,23 @@ li  p{
 
 .perfil{
     float: left;
-    background-color: #1E0045;
+    background-color: var(--primario-s3);
     display: none;
     border-radius: 10px;
     width:270px;
     height: 239px;
     justify-content: center;
     margin-left: 2px;
+    position: absolute;
+    z-index: 2;
 }
-
 
 .lista-perfil li {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
     text-align: center;
-
-
 }
-
 
 .division-menu {
     width: 250px;
@@ -210,39 +275,407 @@ li  p{
 }
 
 
-/*TERMINA PERFIL*/
-
-/* mostrar menues*/
+/* mostrar menús*/
 .sub-menu.show{
     display: flex;
     flex-direction: column;
 }
 
+/*EMPIEZA CARRUCEL*/
 
-/*AGRANDAR EL TAMAÑO DEL CARRITO A 300PX*/
-
+.imagenes{
+    display: flex;
+    position: absolute;
+    transition: all 1s ease;
+} 
 
 /*carrusel mobile*/
-.carrusel {
+.carrusel-mobile-destacado , .carrusel-mobile-recomendado  {
+    max-width: 425px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     overflow: scroll;
-  }
- 
-.card {
-    /*para que la card mantengan su tamaño con flex 
-    y que no se ajusten a la resoluncion
-    de la pantalla{si no se acomodan 
-    uno al lado de la otra}) (se sale de la pantalla
-    y podemos scrollear con overflow)*/
-    flex:  1 0 auto;
-    width: 100px;
-    height: 100px;
-    background-color: #7425D8;
-    margin: 0 10px;
-    transform : rotate3D(-3,-4,0,45deg);
+    position: relative;
+    height: 200px;
+    margin: 50px 10px;
+}
 
-  }
+.carrusel-mobile-categorias {
+    max-width: 425px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+    position: relative;
+    height: 150px;
+    margin: 50px 10px;
+  
+}
 
-.card:focus{
-    transform: rotate(0);
+
+.img-cards-destacados{
+    border-radius: 16px;
+    height: 170px;
+    width: 253px;
+    margin-right: 20px;
+}
+
+.img-cards{
+    border-radius: 16px;
+    height: 120px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+.etiqueta-gratis{
+    height: 24px;
+    width: 55px;
+    border-radius:  9px 55px 55px 0px;;
+    position: absolute;
+    background-color: var(--secundario-l1);
+    box-shadow: var(--elevacion2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.etiqueta-pago{
+    display: flex;
+    justify-content: space-between;
+    width: 182px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: var(--negro);
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.etiqueta-pago p {
+    margin-left: 5px;
+}
+.etiqueta-agregar{
+    display: flex;
+    justify-content: center;
+    background-color:var(--acento);
+    width: 128px;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 3px;
+      
+    height: 25px;
+}
+.etiqueta-agregado{
+    width: 130px;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    background-color: var(--exito);
+}
+
+.etiqueta-gratis p , .etiqueta-agregar p, .etiqueta-agregado p, .etiqueta-pago p {
+    color: var(--blanco);
+}
+
+/*cards se le agrega position relativo
+para poder desplazarlo la etiqueta gratis
+ya que etiqueta gratis tiene absoluto
+y se me mueve la etiqueta gracias
+al absoluto del gratis con left 0*/
+.cards {
+    position: relative;
+}
+
+.etiqueta-gratis {
+    left: 0;
+    top: 0;
+}
+
+.etiqueta-agregado, .etiqueta-pago {
+    right: 25px;
+    bottom: 20px;
+}
+
+
+
+
+/*TERMINA CARRUCEL*/
+
+
+
+
+  @media (min-width: 1024px) {
+    
+    .botones{
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        text-align: center;
+        list-style: none;
+        color: black;
+        border-radius: 70%;
+        position: absolute;
+        font-size: 20px;
+        display: none;
+    }
+
+    /*Home*/
+
+    .carrusel-mobile {
+        display: none;
+    }
+
+    .card-mobile {
+        display: none;
+    }
+
+
+    /*Página del juego en ejecución*/
+
+
+
+    .container{
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contenido-principal {
+       display: flex;
+       flex-direction: column;
+    }
+    
+     .breadcrumbs{
+        width: 285px;
+        margin-top: 22px;
+        padding: 10px;
+        margin-bottom: 37px;
+        border-radius: 3px;
+        background-color: var(--primario-l2);
+     }
+    
+     .juego-ejecucion img{
+        width: 1000px;
+        height: 538px;
+        border-radius: 10px;
+     }
+
+     /*Calificación y botón compartir*/
+
+    .calificar-compartir{
+        background-color: var(--primario-s2);
+        height: 50px;
+        width: 285px;
+        align-self: flex-end;
+        border-radius: 5px;
+        box-shadow: var(--elevacion2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icono-calif-comp{
+    display: flex;
+    align-items: center;
+    }
+    
+    .icono-calif-comp img{
+        width: 36px;
+        height: 36px;
+        margin: 10px;
+    }
+
+    /*General secciones*/
+
+    .info-juego{
+        margin-bottom: 40px;
+    }
+    
+    .division-seccion{
+        height: 5px;
+        background-color: var(--primario);
+        border: var(--primario);
+        margin-bottom: 10px;
+    }
+
+     /*Descripción*/
+
+    .imgs-desc{
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .imgs-desc img {
+        max-height: 150px;
+        margin-right: 20px;
+    }
+
+
+    /*Instrucciones del juego*/
+    .cont-instrucciones {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .instruccion-juego{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .instruccion-juego img {
+        margin-right: 10px;
+        width: 70px;
+        height: 65px;
+    }
+
+    /*Comentarios*/
+
+    .comentarios {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .comentarios-flex {
+        align-self: center;
+    }
+    
+    .publicacion, .comentario {
+        background-color: var(--negro);
+        min-width: 800px;
+        min-height: 120px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+    
+    .publicacion {
+        margin-top: 40px;
+    }
+    
+    .comentario {
+        width: 700px;
+    }
+    
+    .publicacion img, .comentario img {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .comentario-publicar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .comentario-publicar p, .comentario span {
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    
+    .usuario-comentario {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    .comentario-publicar textarea, .comentario-publicar button {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .comentario-publicar textarea::placeholder{
+        font-family: var(--font-inter);
+    }
+    
+    .comentario-publicar button {
+        width: 60px;
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+    
+    .comentario-publicar textarea {
+        margin: 10px;
+    }
+
+    /*Aside publicidad*/
+
+    aside {
+        margin-top: 135px;
+    }
+    
+    .publicidad{
+        margin-bottom: 20px;
+    }
+    
+    .publicidad img{
+        max-width: 300px;
+    }
+
+
+    /*Footer*/
+
+    footer{
+        height: 414px;
+        background-color: var(--primario-s3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .lista-footer{
+        margin-top: 75px;
+        text-align: center;
+        width: 19%;
+    }
+
+    .lista-footer ul{
+        list-style-type: none;
+
+    }
+
+    .lista-footer li a{
+        text-decoration: none;
+        
+    }
+
+    .lista-footer li {
+        margin-top: 20px;
+
+    }
+
+    .linea-divisoria{
+        align-self: center;
+        margin-top: 60px;
+        border: solid 0.5px;
+        width: 1200px;
+    }
+
+    .redes-footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 47px;
+    }
+
+    .redes-footer ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    .redes-footer li{
+        margin-right: 30px;
+
+    }
+
+    .redes-footer img{
+        width: 29px;
+        height: 29px;
+    }
+   /*TERMINA PAGINA DE JUEGO.HTML*/
   }
