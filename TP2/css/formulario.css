@@ -10,7 +10,7 @@ body{
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 .container-logo{
@@ -21,24 +21,23 @@ body{
     width: 250px;
     height: 78px;
 }
+
 .form-box{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
-    height: 580px;
+    height: 595px;
     background-color: #37007B;
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--elevacion1);
 }
 
 .titulo-form{
-    font-size: 36px;
-    font-weight: lighter;
     margin-top: 60px;
 }
 
 .form {
-   margin: 40px 175px 21px 175px;
+   margin: 40px 175px 21px 175px;  
 }
 
 .input-grande{
@@ -55,15 +54,17 @@ body{
 .form-registro{
     margin: 30px 175px 21px 175px;
 }
+
 .form-box-registro{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 600px;
-    height: 940px;
+    height: 955px;
     margin-top: 20px;
     background-color: #37007B;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
 }
 
 .chico{
@@ -96,7 +97,7 @@ body{
     margin-top: 20px;
 }
 
-.btn-redes, .btn-terciario{
+.btn-redes{
     background: transparent;
     border: none;
 
@@ -104,6 +105,14 @@ body{
 
 .registrarse{
     margin-top: 30px;
+}
+
+.registrarse a{
+    text-decoration: none;
+}
+
+.input-form span {
+    color: var(--peligro);
 }
 
 .form-box{
@@ -117,6 +126,7 @@ body{
 }
 .btn-sesion{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -130,6 +140,27 @@ body{
     margin-left: 5px;
 }
 
+.btn-login ,.btn-registrarse{
+    cursor: pointer;
+}
+
+.exito{
+    display: none;
+    margin-top: 10px; 
+}
+
+.btn-sesion .exito.tilde{
+    display: flex;
+}
+
+.tilde-img {
+    width: 50px;
+    height: 50px;   
+}
+
+.btn-redes {
+    cursor: pointer;
+}
 
 
 

@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayo vs Chick</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     
 </head>
 <body>
     <header>
+        <div class="logo-header">
+           <button><a href="home.html"><img src="images/logo.png" alt="Logo Ensigna games"></a></button>
+        </div>
         <div class="icono-avatar">
-            <button class="boton-menu">
+            <button class="btn-menu">
                 <img class="img-avatar" src="images/avatar.jpg" alt="avatar.png">
             </button>
         </div>
@@ -18,62 +22,78 @@
         <div class="container-buscador">
             <form class="buscador">
                 <input type="text" placeholder="¿A qué jugamos hoy?">
-                <button><img src="images/lupa.png" alt="Lupa"></button>
+                <button class="lupa"><img src="images/lupa.png" alt="Lupa"></button>
             </form>
         </div>
         <div class="icono-carrito">
-            <button class="boton-menu">
+            <button class="btn-menu">
                 <img src="images/carrito.png" alt="">
             </button>
         </div>
    </header>
-    <div class="container">
-        <div class="perfil sub-menu">
-            <ul class="lista-perfil">
-                <hr class="division-menu">
-                    <li class="txtbtn">Perfil</li>
-                    <li class="txtbtn">Editar perfil</li>
-                    <li class="txtbtn">Mis juegos</li>
-                    <li class="txtbtn">Cerrar sesion</li>            
-                <hr class="division-menu">
-            </ul>
-        </div>
-       
-       <div class="menu sub-menu">
-            <ul class="lista">
-                <h2 class="h2-mobile titulo-h2">Mi carrito</h2>
-                <hr class="division-menu">
-                <div class="item">
-                    <li><img class="img-carrito" src="images/battlefield3.jpg" alt="battlefield3.png">
-                        <p>batlefield3 $3000</p>
-                    </li>               
-                        <img  class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
-                </div>
-                <div class="item">
-                    <li><img class="img-carrito" src="images/jump force.png" alt="jump-force.png">
-                        <p>jump-force $4000</p>
-                    </li>
-                    <img class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
-                </div>
-                <div class="item">
-                    <li><img  class="img-carrito" src="images/fifa-23.jpg" alt="FIFA23.png">
-                        <p>FIFA-23 $4000</p>
-                    </li>    
-                    <img class="img-eliminar"src="images/eliminar.png" alt="eliminar.png">
-                </div>
-            </ul>
+    <div class="container-juego">
+        <!--Menu desplegable-->
+    <div class="perfil menu">
+        <ul class="lista-perfil">
             <hr class="division-menu">
-            <div class="carrito-precio">
-                 <h3 class="titulo-h3">total</h3>
-                 <h3 class="titulo-h3">$11.000</h3>
-            </div>
-            <div class="btn-carrito">
-                <button class="btn-primario txtbtn" type="button">Finalizar la compra</button>
-            </div>  
+                <li class="txtbtn"><a href="#" class="btn-terciario">Perfil</a></li>
+                <li class="txtbtn"><a href="#" class="btn-terciario">Editar perfil</a></li>
+                <li class="txtbtn"><a href="#" class="btn-terciario">Mis juegos</a></li>
+                <li class="txtbtn"><a href="#" class="btn-terciario">Cerrar sesión</a></li>          
+            <hr class="division-menu">
+        </ul>
+    </div>
+
+    <div class="carrito menu">
+        <h2 class="titulo-h2">Mi carrito</h2>
+        <hr class="division-menu">
+        <ul class="lista">
+            <li class="item">
+                <div class="card-carrito">
+                    <img class="img-carrito" src="images/jumpforce.png" alt="Jump force">
+                    <div class="info-carrito">
+                        <h3 class="titulo-h3">Jump Force</h3>
+                        <p class="txtbody">$3500</p>
+                    </div>
+                </div>
+                <img class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
+            </li>
+
+            <li class="item">
+                <div class="card-carrito">
+                    <img class="img-carrito" src="images/battlefield3.jpg" alt="Battlefield 3">
+                    <div class="info-carrito">
+                        <h3 class="titulo-h3">Battlefield 3</h3>
+                        <p class="txtbody">$2500</p>
+                    </div>
+                </div>               
+                <img class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
+            </li>
+
+            <li class="item">
+                <div class="card-carrito">
+                    <img class="img-carrito" src="images/fifa-23.jpg" alt="Fifa 23">
+                    <div class="info-carrito">
+                        <h3 class="titulo-h3">FIFA 23</h3>
+                        <p class="txtbody">$5000</p>
+                    </div>
+                </div>    
+                <img class="img-eliminar"src="images/eliminar.png" alt="eliminar.png">
+            </li>
+
+        </ul>
+        <hr class="division-menu">
+        <div class="carrito-precio">
+            <h3 class="titulo-h3">total</h3>
+            <h3 class="titulo-h3">$11.000</h3>
         </div>
+        <div class="btn-carrito">
+            <button class="btn-primario txtbtn" type="button">Finalizar la compra</button>
+        </div>  
+    </div>
         <main class="contenido-principal">
             <div class="breadcrumbs">
-                <a href="index.html" class="txtbtn">Home</a>
+                <a href="home.html" class="txtbtn btn-terciario">Home</a>
                 <span class="txtbtn">→</span>
                 <span class="txtbtn">Destacados</span>
                 <span class="txtbtn">→</span>
@@ -81,7 +101,7 @@
             </div>
             <h1 class="titulo-h1">Rayo vs Chick</h1>
             <section class="juego-ejecucion">
-                <img src="images/Rayo McQueen vs Chick Hicks (1).png" alt="Pantalla de juego">
+                <img src="images/rayovschick.png" alt="Pantalla de juego">
             </section>
             <div class="calificar-compartir">
                 <div class="icono-calif-comp">
@@ -127,7 +147,7 @@
                         </div>
                     </div>
                     <figure>
-                        <img src="images/video-como-jugar.png" alt="">
+                        <img src="images/video-como-jugar.png" alt="Video instruccion del juego" class="video-instruccion">
                     </figure>
                 </div> 
             </section>
@@ -150,7 +170,7 @@
                     <div class="comentario">
                         <div class="usuario-comentario">
                             <img src="images/avatar-1.png" alt="Avatar del perfil">
-                            <p class="txtbody-bold">Tú</p>
+                            <p class="txtbody-bold">Usuario5587</p>
                         </div>
                         <hr>
                         <div class="comentario-publicar">
@@ -162,13 +182,13 @@
                     <div class="comentario">
                         <div class="usuario-comentario">
                             <img src="images/avatar-2.png" alt="Avatar del perfil">
-                            <p class="txtbody-bold">Tú</p>
+                            <p class="txtbody-bold">Usuario8773</p>
                         </div>
                         <hr>
                         <div class="comentario-publicar">
-                            <p class="txtbody">Me encanta este juego!</p>
+                            <p class="txtbody">No me gustó, muy aburrido!</p>
                         </div>
-                        <span class="txtbody2">Hace 8 horas</span>
+                        <span class="txtbody2">Hace 3 días</span>
                     </div>
                   </div>    
             </section>
@@ -194,27 +214,27 @@
     <footer>
         <div class="footer-info">
             <div class="lista-footer">
-                    <h3>Compañía</h3>
+                    <h3 class="titulo-h3">Compañía</h3>
                     <ul>
-                        <li><a href="">Acerca de</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contactanos</a></li>
+                        <li><a href="" class="txtbtn btn-terciario">Acerca de</a></li>
+                        <li><a href="" class="txtbtn btn-terciario">Blog</a></li>
+                        <li><a href="" class="txtbtn btn-terciario">Contactanos</a></li>
                     </ul>
             </div>
             <div class="lista-footer">
-                <h3>Soporte</h3>
+                <h3 class="titulo-h3">Soporte</h3>
                 <ul>
-                    <li><a href="">Centro de ayuda</a></li>
-                    <li><a href="">Enviar un juego</a></li>
-                    <li><a href="">Reportar un juego</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Centro de ayuda</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Enviar un juego</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Reportar un juego</a></li>
                 </ul>
             </div>
             <div class="lista-footer">
-                <h3>Privacidad y términos</h3>
+                <h3 class="titulo-h3">Privacidad y términos</h3>
                 <ul>
-                    <li><a href="">Términos de usos</a></li>
-                    <li><a href="">Políticas de privacidad</a></li>
-                    <li><a href="">Política de devoluciones y reembolsos</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Términos de usos</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Políticas de privacidad</a></li>
+                    <li><a href="" class="txtbtn btn-terciario">Política de devoluciones</a></li>
                 </ul>
             </div>
         </div>
@@ -228,6 +248,6 @@
             </ul>
        </div>
     </footer>
-    <script type="text/javascript" src="js/menu-hamburguesa.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

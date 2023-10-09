@@ -2,246 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Ensigna games</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Ensigna games - Home</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
 </head>
 <body>
-   
-    <header>
-        <div class="icono-avatar">
-            <button class="boton-menu">
-                <img class="img-avatar" src="images/avatar.jpg" alt="avatar.png">
-            </button>
+    <div class="container">
+        <div class="container-logo">
+            <img class="logo" src="images/logo.png" alt="Logo Ensigna games">
         </div>
-         
-        <div class="container-buscador">
-            <form class="buscador">
-                <input type="text" placeholder="¿A qué jugamos hoy?">
-                <button><img src="images/lupa.png" alt="Lupa"></button>
+        <section class="form-box">
+            <h1 class="titulo-form titulo-h1">Iniciar sesión</h1> 
+             
+            <form class="form">
+                <div class="input-form">
+                    <label for="email" class="txtbody">Email</label>
+                    <input type="email" class="input-grande" >
+                </div>
+                <div class="input-form">
+                    <label for="password" class="txtbody">Contraseña</label>
+                    <input required type="password" class="input-grande" >
+                </div>
+                <div class="btn-sesion">
+                    <button type="button" class="btn-primario txtbtn btn-login btn-formulario">
+                        <span>Iniciar sesión</span> 
+                    </button>
+                    <div class="exito">
+                        <img src="images/tilde.png" alt="tilde" class="tilde-img">
+                    </div>  
+                </div> 
             </form>
-        </div>
-        <div class="icono-carrito">
-            <button class="boton-menu">
-                <img src="images/carrito.png" alt="">
-            </button>
-        </div>
-   </header>
-
-   <div class="perfil sub-menu">
-        <ul class="lista-perfil">
-            <hr class="division-menu">
-                <li class="txtbtn">Perfil</li>
-                <li class="txtbtn">Editar perfil</li>
-                <li class="txtbtn">Mis juegos</li>
-                <li class="txtbtn">Cerrar sesion</li>            
-            <hr class="division-menu">
-        </ul>
-    </div>
-   
-   <div class="menu sub-menu">
-        <ul class="lista">
-            <h2 class="h2-mobile titulo-h2">Mi carrito</h2>
-            <hr class="division-menu">
-            <div class="item">
-                <li><img class="img-carrito" src="images/battlefield3.jpg" alt="battlefield3.png">
-                    <p>batlefield3 $3000</p>
-                </li>               
-                    <img  class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
+            <img  src="images/division.png" alt="división O inicio de sesión con redes" class="division-form">
+            <div class="btns-redes">
+                <button type="button" class="btn-redes txtbody btn-formulario"><img src="images/icono-fb.jpeg" alt="Icono facebook" class="img-btn">Iniciar sesión con Facebook</button>
+                <button type="button" class="btn-redes txtbody btn-formulario"><img src="images/icono-google.png" alt="Icono google"class="img-btn">Iniciar sesión con Google</button>
             </div>
-            <div class="item">
-                <li><img class="img-carrito" src="images/jumpforce.png" alt="jump-force.png">
-                    <p>jump-force $4000</p>
-                </li>
-                <img class="img-eliminar" src="images/eliminar.png" alt="eliminar.png">
+            <div class="registrarse">
+                <span class="txtbody">¿No tienes una cuenta?</span><a href="registrarse.html" class="btn-terciario txtbtn">Registrate</a>
             </div>
-            <div class="item">
-                <li><img  class="img-carrito" src="images/fifa-23.jpg" alt="FIFA23.png">
-                    <p>FIFA-23 $4000</p>
-                </li>    
-                <img class="img-eliminar"src="images/eliminar.png" alt="eliminar.png">
-            </div>
-        </ul>
-        <hr class="division-menu">
-        <div class="carrito-precio">
-             <h3 class="titulo-h3">total</h3>
-             <h3 class="titulo-h3">$11.000</h3>
-        </div>
-        <div class="btn-carrito">
-            <button class="btn-primario txtbtn" type="button">Finalizar la compra</button>
-        </div>  
+        </section>
     </div>
 
-    <!--CARRUCEL--->
-    <h2 class="titulo-h2">Destacados</h2>
-    <div class="carrusel-mobile-destacado">
-        <div class="imagenes">
-            <div class="cards">
-                <div class="etiqueta-gratis ">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards-destacados" src="images/rayovschick.png" alt="apex">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-agregado">
-                    <p class="txtetiqueta">Agregado al carrito</p>
-                </div>
-                <img class="img-cards-destacados" src="images/battlefield3.jpg" alt="battlefield 3">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards-destacados" src="images/avengers.png" alt="avengers">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards-destacados" src="images/battleground.png" alt="battleground">
-            </div>   
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards-destacados" src="images/minecraft.jpg" alt="minecraft">
-            </div>
-        </div>
-        <div class="botones atras">
-            &#60
-        </div>
-        <div class="botones adelante">
-            &#62
-        </div>
-    </div>
+   <script type="text/javascript" src="js/main.js"></script>
 
-    <div class="carrusel-mobile-recomendado">
-        <div class="imagenes">
-            <div class="cards">
-                <div class="etiqueta-agregado">
-                    <p class="txtetiqueta">Agregado al carrito</p>
-                </div>
-                <img class="img-cards-destacados" src="images/fifa-23.jpg" alt="apex">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards-destacados" src="images/mortalkombat.jpg" alt="Mortal kombat">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-agregado">
-                    <p class="txtetiqueta">Agregado al carrito</p>
-                </div>
-                <img class="img-cards-destacados" src="images/portal2.jpg" alt="Portal 2">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-agregado">
-                    <p class="txtetiqueta">Agregado al carrito</p>
-                </div>
-                <img class="img-cards-destacados" src="images/the-final-earth2.png" alt="The final earth 2">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-agregado">
-                    <p class="txtetiqueta">Agregado al carrito</p>
-                </div>
-                <img class="img-cards-destacados" src="images/uncharted.jpg" alt="uncharted">
-            </div>            
-        </div>
-        <div class="botones atras">
-            &#60
-        </div>
-        <div class="botones adelante">
-            &#62
-        </div>
-    </div>
-    
-    
-    <div class="carrusel-mobile-categorias">
-        <div class="imagenes">
-            <div class="cards">
-                <div class="etiqueta-gratis">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards" src="images/cod.png" alt="call of duty">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards" src="images/dbz.jpg" alt="dragon ball z">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-gratis">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards" src="images/mariokart.png" alt="Mario kart">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-gratis">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards" src="images/terraria.jpg" alt="terraria">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-gratis">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards" src="images/castlecrashers.jpeg" alt="Castle crashers">
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="carrusel-mobile-categorias">
-        <div class="imagenes">
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards" src="images/unravel.png" alt="Unravel">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-gratis">
-                    <p class="txtetiqueta">Gratis</p>
-                </div>
-                <img class="img-cards" src="images/farcry.png" alt="Farcry 4">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards" src="images/horizon.jpg" alt="Horizon">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards" src="images/sonic.jpg" alt="Sonic">
-            </div>
-            <div class="cards">
-                <div class="etiqueta-pago">
-                    <p class="txtetiqueta">Pago</p>
-                    <button class="etiqueta-agregar txtbtn">Agregar al carrito</button>
-                </div>
-                <img class="img-cards" src="images/fortnite.jpg" alt="Fornite">
-            </div>
-        </div>
-    </div>
-    
-    
-
- 
-   <script type="text/javascript" src="js/menu-hamburguesa.js"></script>
 </body>
 </html>
-
