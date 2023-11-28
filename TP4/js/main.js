@@ -178,27 +178,26 @@ window.addEventListener("scroll" , () => {
    
     //dependiendo lo que se haya scrolleado, muestro una descripcion y oculto la anterior
     if(window.scrollY < 4100){
+        document.querySelector(".section6-descripcion2").classList.remove("mostrarDescripcion");
+
         document.querySelector(".section6-descripcion1").classList.add("mostrarDescripcion");
     }
     else if(window.scrollY > 4100 && window.scrollY < 4500){
         document.querySelector(".section6-descripcion1").classList.remove("mostrarDescripcion");
-        document.querySelector("#section-cards").classList.remove("section6-card1");
+        document.querySelector(".section6-descripcion3").classList.remove("mostrarDescripcion");
 
-        document.querySelector("#section-cards").classList.add("section6-card2");
+
         document.querySelector(".section6-descripcion2").classList.add("mostrarDescripcion");
     }
     else if(window.scrollY > 4500 && window.scrollY < 4950){
         document.querySelector(".section6-descripcion2").classList.remove("mostrarDescripcion");
-        document.querySelector("#section-cards").classList.remove("section6-card2");
+        document.querySelector(".section6-descripcion4").classList.remove("mostrarDescripcion");
 
-        document.querySelector("#section-cards").classList.add("section6-card3");
         document.querySelector(".section6-descripcion3").classList.add("mostrarDescripcion");
     }
     else if(window.scrollY > 4950){
         document.querySelector(".section6-descripcion3").classList.remove("mostrarDescripcion");
-        document.querySelector("#section-cards").classList.remove("section6-card3");
         
-        document.querySelector("#section-cards").classList.add("section6-card4");
         document.querySelector(".section6-descripcion4").classList.add("mostrarDescripcion");
     }
 

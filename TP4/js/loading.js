@@ -19,6 +19,8 @@ function cargarbarra(){
             let ocultarBarra = () => {
                 ocultar.classList.toggle("ocultar");
                 document.body.classList.remove('overflow'); //oculto la barra de scroll durante la carga
+                window.scrollTo(0,0); //para que cuando refresque la pagina te devuelva a arriba
+
             }
             setTimeout(ocultarBarra, 500); 
         }
